@@ -5,15 +5,15 @@ const express = require("express");
 const router = express.Router();
 
 router.get('/', (request, response) => {
-	    AppController.getHomepage(request, router);
+    AppController.getHomepage(request, router);
 });
 
 router.get('/students', (request, response) => {
-	    StudentsController.getAllStudents(request, response);
+    StudentsController.getAllStudents(request, response);
 });
 
 router.get('/students/:major', (request, response) => {
-	    StudentsController.getAllStidemtsByMajor(request, response);
+    StudentsController.getAllStidemtsByMajor(request, response);
 });
 
 module.exports = router;
